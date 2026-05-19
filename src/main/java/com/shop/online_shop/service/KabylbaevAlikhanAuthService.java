@@ -7,3 +7,4 @@ import com.shop.online_shop.dto.response.KabylbaevAlikhanAuthResponse;
 public interface KabylbaevAlikhanAuthService {
     KabylbaevAlikhanAuthResponse register(KabylbaevAlikhanRegisterRequest request);
     KabylbaevAlikhanAuthResponse login(KabylbaevAlikhanLoginRequest request);
+}
