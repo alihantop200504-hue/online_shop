@@ -1,6 +1,6 @@
 package com.shop.online_shop.security.jwt;
 
-import com.gym.gym_management.security.DilbarUserDetailsServiceImpl;
+import com.shop.online_shop.security.KabylbaevAlikhanUserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -17,10 +17,10 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-public class DilbarJwtFilter extends OncePerRequestFilter {
+public class KabylbaevAlikhanJwtFilter extends OncePerRequestFilter {
 
-    private final DilbarJwtUtil jwtUtil;
-    private final DilbarUserDetailsServiceImpl userDetailsService;
+    private final KabylbaevAlikhanJwtUtil jwtUtil;
+    private final KabylbaevAlikhanUserDetailsServiceImpl userDetailsService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,

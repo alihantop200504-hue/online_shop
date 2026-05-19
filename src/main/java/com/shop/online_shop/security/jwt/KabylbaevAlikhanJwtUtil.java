@@ -12,7 +12,7 @@ import java.security.Key;
 import java.util.Date;
 
 @Component
-public class DilbarJwtUtil {
+public class KabylbaevAlikhanJwtUtil {
 
     @Value("${jwt.secret}")
     private String secretKey;

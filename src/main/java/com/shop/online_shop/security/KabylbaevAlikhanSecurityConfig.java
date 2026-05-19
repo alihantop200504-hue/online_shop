@@ -1,6 +1,6 @@
 package com.shop.online_shop.security;
 
-import com.gym.gym_management.security.jwt.DilbarJwtFilter;
+import com.shop.online_shop.security.jwt.KabylbaevAlikhanJwtFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,10 +17,10 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
-public class DilbarSecurityConfig {
+public class KabylbaevAlikhanSecurityConfig {
 
-    private final DilbarJwtFilter jwtFilter;
-    private final DilbarUserDetailsServiceImpl userDetailsService;
+    private final KabylbaevAlikhanJwtFilter jwtFilter;
+    private final KabylbaevAlikhanUserDetailsServiceImpl userDetailsService;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -31,7 +31,6 @@ public class DilbarSecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
-                        .requestMatchers("swagger-ui.html").permitAll()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
