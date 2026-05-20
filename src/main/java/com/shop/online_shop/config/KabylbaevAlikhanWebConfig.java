@@ -15,4 +15,5 @@ public class KabylbaevAlikhanWebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loggingInterceptor).addPathPatterns("/api/**");
     }
+
 }
