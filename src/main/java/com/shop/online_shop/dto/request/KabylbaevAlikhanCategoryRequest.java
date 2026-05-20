@@ -12,4 +12,4 @@ public class KabylbaevAlikhanCategoryRequest {
     @NotBlank
     private String name;
     private String description;
-}
+
