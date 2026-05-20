@@ -11,4 +11,5 @@ public class KabylbaevAlikhanAuthResponse {
     private String token;
     private String username;
     private String role;
+
 }
