@@ -22,6 +22,7 @@ public class KabylbaevAlikhanJwtFilter extends OncePerRequestFilter {
     private final KabylbaevAlikhanJwtUtil jwtUtil;
     private final KabylbaevAlikhanUserDetailsServiceImpl userDetailsService;
 
+
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,

@@ -48,6 +48,7 @@ public class KabylbaevAlikhanJwtUtil {
         return username.equals(userDetails.getUsername()) && !isTokenExpired(token);
     }
 
+
     private boolean isTokenExpired(String token) {
         return Jwts.parserBuilder()
                 .setSigningKey(getSigningKey())
