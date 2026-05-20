@@ -37,4 +37,6 @@ public class KabylbaevAlikhanOrder {
 
     @OneToMany(mappedBy = "order", fetch = FetchType.LAZY)
     private List<KabylbaevAlikhanOrderItem> items;
+
+
 }
