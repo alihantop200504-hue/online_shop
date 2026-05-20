@@ -13,3 +13,4 @@ public class KabylbaevAlikhanCategoryRequest {
     private String name;
     private String description;
 
+}
