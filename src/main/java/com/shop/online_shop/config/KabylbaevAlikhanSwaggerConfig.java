@@ -26,4 +26,6 @@ public class KabylbaevAlikhanSwaggerConfig {
                                 .scheme("bearer")
                                 .bearerFormat("JWT")));
     }
+
+
 }
