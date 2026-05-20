@@ -6,6 +6,7 @@ import com.shop.online_shop.dto.response.KabylbaevAlikhanAuthResponse;
 import com.shop.online_shop.entity.KabylbaevAlikhanUser;
 import com.shop.online_shop.enums.KabylbaevAlikhanRole;
 import com.shop.online_shop.repository.KabylbaevAlikhanUserRepository;
+import com.shop.online_shop.security.jwt.KabylbaevAlikhanJwtUtil;
 import com.shop.online_shop.service.KabylbaevAlikhanAuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
