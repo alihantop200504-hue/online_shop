@@ -6,4 +6,5 @@ public enum KabylbaevAlikhanOrderStatus {
     SHIPPED,
     DELIVERED,
     CANCELLED
+
 }
